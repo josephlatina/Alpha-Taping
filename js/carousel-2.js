@@ -10,7 +10,7 @@ const slideWidth2 = slides2[0].getBoundingClientRect().width;
 
 //for each slide in the array, arrange them next to one another
 slides2.forEach((slide, index) => {
-    slide.style.left = slideWidth * index + 'px';
+    slide.style.left = slideWidth2 * index + 'px';
 })
 
 /** -------------- FUNCTION DECLARATIONS -------------------- */
@@ -57,10 +57,9 @@ prevButton2.addEventListener('click', e => {
     const prevIndex = slides2.findIndex(slide => slide === prevSlide);
     //move the slide and update current nav indicator
     moveToSlide2(track2, currentSlide, prevSlide);
-    updateDots2(currentDot, prevDot);
     //Based on current index of nav indicator, add or remove the hidden class property for the arrows
     hideShowArrows2(slides2, prevButton2, nextButton2, prevIndex);
-    console.log("test1");
+    console.log(slides2.length);
 })
 
 // when I click right, move slides to right
@@ -73,10 +72,9 @@ nextButton2.addEventListener('click', e => {
     const nextIndex = slides2.findIndex(slide => slide === nextSlide);
     //move the slide and update current nav indicator
     moveToSlide2(track2, currentSlide, nextSlide);
-    updateDots2(currentDot, nextDot);
     //Based on current index of nav indicator, add or remove the hidden class property for the arrows
     hideShowArrows2(slides2, prevButton2, nextButton2, nextIndex);
-    console.log("test2");
+    console.log(slides2.length);console.log("test2");
 })
 
 // when I click the nav indicators, move to that slide

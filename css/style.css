@@ -163,7 +163,7 @@ html {
     }
     #offset-box {
         height: 450px;
-        margin-top: 300px;
+        margin-top: 450px;
         border: 8px solid white;
         background-color: #1C1C1C;
         z-index: 10;
@@ -209,6 +209,7 @@ html {
     #about-img-lg img {
         width: 600px;
         height: 500px;
+        object-fit: cover;
         position: absolute;
         margin-left: 40px;
         margin-top: 80px;
@@ -534,6 +535,9 @@ nav {
     min-height: 600px;
     margin-top: 50px;
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #product-service p {
     margin-top: 20px;
@@ -557,6 +561,7 @@ nav {
     width: 300px;
     height: 300px;
     margin: 30px;
+    object-fit: cover;
 }
 #gallery .row section{
     margin-top: 50px;
@@ -645,11 +650,14 @@ nav {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 #featured-projects .main-pic h4 {
     text-align: center;
 }
-#featured-projects .sub-pic img {
+/* #featured-projects .sub-pic img {
     width: 400px;
     height: 400px;
     display: block;
@@ -657,7 +665,7 @@ nav {
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-}
+} */
 #featured-projects p {
     margin-top: 50px;
     text-align: center;
@@ -668,7 +676,10 @@ nav {
     text-align: center;
 }
 .mobile-service {
-    height: 1500px;
+    height: 700px;
+}
+#service p {
+    margin:0;
 }
 
 /*+++++++++++++++++++ ABOUT PAGE  +++++++++++++++++++ */
@@ -746,6 +757,19 @@ input {
     width: 100%;
 }
 #submit-button {
-    height: 35px;
     width: 150px;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    text-decoration: none;
+}
+
+#submit-button:hover {
+    background-color: #E3B782;
+    border: 2px solid #E3B782;
+    color: white;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
 }
