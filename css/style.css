@@ -289,10 +289,17 @@ html {
 header .logo {
     position: absolute;
     z-index: 10;
+    left: 40px;
     top: 30px;
-    width: 100px;
-    height: 100px;
+    width: 50%;
+    height: 50%;
   }
+
+header .logo img {
+    width: 150px;
+    height: 110px;
+    object-fit: cover;
+}
 
 header li {
     color: white;
@@ -343,12 +350,14 @@ nav {
 } 
 .head {
     height: 0px;
+    margin-left: 0;
 }
 
 /*+++++++++++++++++++ FOOTER +++++++++++++++++++ */
 #footer-content #logo {
-    width: 80px;
+    width: 100px;
     height: 80px;
+    object-fit: cover;
 }
 #footer-content img {
     width: 40px;
