@@ -39,6 +39,15 @@ html {
   header .inner {
     display: none;
   }
+  header .logo {
+    position: absolute;
+    z-index: 10;
+    left: 5%;
+    top: 30px;
+    width: 50%;
+    height: 50%;
+  }
+
   #nav-sm {
     display: block;
   }
@@ -180,6 +189,15 @@ html {
 /*+++++++++++++++++++ MEDIA QUERY FOR LARGE +++++++++++++++++++ */
 
 @media only screen and (min-width: 992px){
+header .logo {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    top: 30px;
+    width: 50%;
+    height: 50%;
+    transform: translateX(-75px);
+    }
   #nav-lg {
     display: block;
   }
@@ -286,15 +304,6 @@ html {
 
 /*+++++++++++++++++++ HEADER +++++++++++++++++++ */
 
-header .logo {
-    position: absolute;
-    z-index: 10;
-    left: 40px;
-    top: 30px;
-    width: 50%;
-    height: 50%;
-  }
-
 header .logo img {
     width: 150px;
     height: 110px;
@@ -304,7 +313,7 @@ header .logo img {
 header li {
     color: white;
     display: inline; 
-    padding: 20px;
+    padding: 10px;
 }
 li {
     list-style: none;
@@ -324,7 +333,8 @@ nav {
     text-align: right;
     position: absolute;
     top: 100px;
-    right: 9.75%;
+    right: 7.75%;
+    z-index: 12;
 }
 .full-nav {
     background: linear-gradient( rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
