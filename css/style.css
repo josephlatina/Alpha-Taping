@@ -161,7 +161,8 @@ html {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 900px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         text-align: center;
         color: white;
     }
@@ -171,7 +172,8 @@ html {
         text-align: center;
     }
     #offset-box {
-        height: 450px;
+        padding-top: 20px;
+        padding-bottom: 10px;
         margin-top: 450px;
         border: 8px solid white;
         background-color: #1C1C1C;
@@ -183,6 +185,49 @@ html {
         border: 8px solid white;
         background-color: #1C1C1C;
         z-index: 10;
+    }
+    /* +++++++++ SERVICES +++++++++*/
+    #featured-projects {
+        display: grid;
+        gap: 100px;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 80px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    #featured-employees {
+        display: grid;
+        gap: 100px;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 80px;
+        margin-left: 30px;
+        margin-right: 30px;
+        text-align: center;
+    }
+    #about-us-workers {
+        display: grid;
+        gap: 100px;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 40%;
+        margin-bottom: 80px;
+        margin-left: 30px;
+        margin-right: 30px;
+        text-align: center;
+    }
+    #about-us-workers h5 {
+        color: #CEA46A;
+        margin-top: 10px;
+    }
+    #about-us-workers p {
+        text-align: center;
+    }
+    /* +++++++++ ABOUT US +++++++++*/
+    .who-we-are div {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 70%;
     }
 }
 
@@ -283,13 +328,58 @@ header .logo {
     }
     .who-we-are {
         margin-top: 10px;
-        margin-bottom: 350px;
+        margin-bottom: 10%;
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 800px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         text-align: center;
         color: white;
+    }
+    /* +++++++++ SERVICES +++++++++*/
+    #featured-projects {
+        display: grid;
+        gap: 120px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 80px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #featured-employees {
+        display: grid;
+        gap: 120px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 80px;
+        margin-left: 8%;
+        margin-right: 8%;
+        text-align: center;
+    }
+    #about-us-workers {
+        display: grid;
+        gap: 120px;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 80px;
+        margin-left: 8%;
+        margin-right: 8%;
+        text-align: center;
+    }
+    #about-us-workers h5 {
+        color: #CEA46A;
+        margin-top: 10px;
+    }
+    #about-us-workers p {
+        text-align: center;
+    }
+    #alpha-cleaning-services {
+        margin-bottom: 10px;
+    }
+    /* +++++++++ ABOUT US +++++++++*/
+    .who-we-are div {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        margin-top: 100px;
     }
 }
 
@@ -661,8 +751,10 @@ nav {
     background-size: cover;
 }
 
-#featured-projects {
-    margin-bottom: 80px;
+#services-description {
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 #featured-projects .main-pic img {
     height: 500px;
@@ -700,6 +792,29 @@ nav {
 #service p {
     margin:0;
 }
+#career-values {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/services-background.jpeg");
+    background-color: #102536;
+    background-blend-mode:luminosity;
+    background-size: cover;
+    min-height: 600px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+#career-values p {
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+#career-values h1 {
+    margin-top: 30px;
+    color: #CEA46A;
+    text-align: center;
+    z-index: 10;
+}
 
 /*+++++++++++++++++++ ABOUT PAGE  +++++++++++++++++++ */
 
@@ -711,14 +826,6 @@ nav {
 
 #meet-the-team h1 {
     text-align: center;
-}
-
-
-.who-we-are div {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    margin-top: 100px;
 }
 
 .row h2 {
