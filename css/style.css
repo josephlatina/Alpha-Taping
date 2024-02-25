@@ -214,10 +214,13 @@ html {
         display: grid;
         gap: 100px;
         grid-template-columns: repeat(1, 1fr);
-        margin-top: 200px;
+        margin-top: 20px;
         margin-bottom: 80px;
-        margin-left: 30px;
+        margin-left: 8%;
         margin-right: 30px;
+        text-align: center;
+    }
+    #featured-employees p {
         text-align: center;
     }
     #about-us-workers {
@@ -238,7 +241,7 @@ html {
         text-align: center;
     }
     #alpha-cleaning-services {
-        margin-top: 200px;
+        margin-top: 50px;
         margin-bottom: 10px;
     }
     /* +++++++++ ABOUT US +++++++++*/
@@ -265,7 +268,6 @@ header .logo {
     }
 .surround-logo {
     margin-top: 50px;
-    margin-bottom: 20px;
 }
 .external-logo {
     left: 50%;
@@ -274,10 +276,11 @@ header .logo {
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .external-logo img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
   #nav-lg {
     display: block;
@@ -389,8 +392,11 @@ header .logo {
         margin-bottom: 80px;
         margin-left: 8%;
         margin-right: 8%;
-        margin-top: 100px;
+        margin-top: 10px;
         text-align: center;
+    }
+    #employee-title {
+        margin-left: 8%;
     }
     #about-us-workers {
         display: grid;
@@ -409,7 +415,6 @@ header .logo {
         text-align: center;
     }
     #alpha-cleaning-services {
-        margin-top: 200px;
         margin-bottom: 10px;
     }
     /* +++++++++ ABOUT US +++++++++*/
@@ -760,6 +765,13 @@ nav {
     height: 450px;
 }
 
+#careers-description {
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .inner-description {
     height: 300px;
     display: flex;
@@ -791,8 +803,10 @@ nav {
 
 #services-description {
     text-align: left;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    margin-left: 8%;
+    margin-right: 8%;
 }
 #featured-projects .main-pic img {
     height: 500px;
@@ -840,7 +854,9 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 #career-values p {
     margin-top: 20px;
@@ -855,10 +871,21 @@ nav {
 }
 
 #services-img {
+    margin-top: 50px;
     background-image: url("../images/services-banner.jpg");
     background-size: cover;
     background-position: center bottom;
     height: 450px;
+}
+
+.emphasis {
+    display: flex;
+    justify-content: left;
+    margin-top: 150px;
+    margin-left: 8%;
+}
+.emphasis h1 {
+    font-size: 60px;
 }
 
 /*+++++++++++++++++++ ABOUT PAGE  +++++++++++++++++++ */
@@ -875,6 +902,7 @@ nav {
 
 .row h2 {
     color: tan;
+    margin-top: 20px;
 }
 
 .boxes {
