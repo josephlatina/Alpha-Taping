@@ -48,6 +48,21 @@ html {
     height: 50%;
   }
 
+  .surround-logo {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.external-logo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+.external-logo img {
+    width: 150px;
+    height: 150px;
+}
+
   #nav-sm {
     display: block;
   }
@@ -199,6 +214,7 @@ html {
         display: grid;
         gap: 100px;
         grid-template-columns: repeat(1, 1fr);
+        margin-top: 200px;
         margin-bottom: 80px;
         margin-left: 30px;
         margin-right: 30px;
@@ -220,6 +236,10 @@ html {
     }
     #about-us-workers p {
         text-align: center;
+    }
+    #alpha-cleaning-services {
+        margin-top: 200px;
+        margin-bottom: 10px;
     }
     /* +++++++++ ABOUT US +++++++++*/
     .who-we-are div {
@@ -243,6 +263,22 @@ header .logo {
     height: 50%;
     transform: translateX(-75px);
     }
+.surround-logo {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.external-logo {
+    left: 50%;
+    top: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.external-logo img {
+    width: 150px;
+    height: 150px;
+}
   #nav-lg {
     display: block;
   }
@@ -353,6 +389,7 @@ header .logo {
         margin-bottom: 80px;
         margin-left: 8%;
         margin-right: 8%;
+        margin-top: 100px;
         text-align: center;
     }
     #about-us-workers {
@@ -372,6 +409,7 @@ header .logo {
         text-align: center;
     }
     #alpha-cleaning-services {
+        margin-top: 200px;
         margin-bottom: 10px;
     }
     /* +++++++++ ABOUT US +++++++++*/
@@ -814,6 +852,13 @@ nav {
     color: #CEA46A;
     text-align: center;
     z-index: 10;
+}
+
+#services-img {
+    background-image: url("../images/services-banner.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    height: 450px;
 }
 
 /*+++++++++++++++++++ ABOUT PAGE  +++++++++++++++++++ */
