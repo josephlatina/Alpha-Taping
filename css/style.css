@@ -179,13 +179,12 @@ html {
         padding-top: 20px;
         padding-bottom: 20px;
         text-align: center;
-        color: white;
     }
-    .who-we-are p {
+    /* .who-we-are p {
         margin-left: 20px;
         margin-right: 20px;
         text-align: center;
-    }
+    } */
     #offset-box {
         padding-top: 20px;
         padding-bottom: 10px;
@@ -245,12 +244,17 @@ html {
         margin-bottom: 10px;
     }
     /* +++++++++ ABOUT US +++++++++*/
-    .who-we-are div {
+    /* .who-we-are div {
         position: relative;
         height: 100%;
         width: 100%;
         margin-top: 100px;
         margin-bottom: 70%;
+    } */
+    #about-owners {
+        display: grid;
+        gap: 50px;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -374,7 +378,6 @@ header .logo {
         padding-top: 20px;
         padding-bottom: 20px;
         text-align: center;
-        color: white;
     }
     /* +++++++++ SERVICES +++++++++*/
     #featured-projects {
@@ -418,11 +421,17 @@ header .logo {
         margin-bottom: 10px;
     }
     /* +++++++++ ABOUT US +++++++++*/
-    .who-we-are div {
+    /* .who-we-are div {
         position: relative;
         height: 100%;
         width: 100%;
         margin-top: 100px;
+    } */
+    #about-owners {
+        margin-top: 100px;
+        display: grid;
+        gap: 100px;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -909,6 +918,13 @@ nav {
     position: absolute;
     height: 600px;
     width: 500px;
+}
+
+.employee-pic img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: 50% 15%;
 }
 
 #inner-offset-box {
