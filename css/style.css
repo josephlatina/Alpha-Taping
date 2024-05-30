@@ -451,6 +451,12 @@ header .logo {
         width: 800px;
         object-fit: cover;
         object-position: center;
+        margin-bottom: 20px;
+    }
+    #about-owners-description {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
     }
 
     #services-description {
